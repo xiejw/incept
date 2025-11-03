@@ -1,0 +1,9 @@
+[params]
+title = "Example"
+numbers = [1, 2, 3]
+
+[services.train_model]
+stage = "Train"
+dataset = "mnist@train"
+model = { model = "MLP", num_layers = 2, batch_size = 32 }
+

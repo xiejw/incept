@@ -1,7 +1,5 @@
-GO_MOD = github.com/xiejw/incept
-
 run:
-	go run cmd/main.go
+	cargo run
 
 fmt:
-	go fmt ${GO_MOD}/...
+	cargo fmt
