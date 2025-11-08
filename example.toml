@@ -7,3 +7,9 @@ stage = "Train"
 dataset = "mnist@train"
 model = { model = "MLP", num_layers = 2, batch_size = 32 }
 
+[services.eval_model]
+stage = "Eval"
+dataset = "mnist@eval"
+model = { model = "MLP", num_layers = 2, batch_size = 32 }
+dependencies = [ "train_model" ]
+
